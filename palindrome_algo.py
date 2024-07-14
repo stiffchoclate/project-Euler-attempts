@@ -34,14 +34,15 @@ def largestPalindrome(digits):
         max+= "9"
     max = int(max)
     min = 10**(digits-1)
-    terms = []
+    largest = 1
 
-    for a in range(1,min+1):
-        for b in range(1, max+1):
-            terms.append(a*b)
-    for each in terms[::-1]:
-        if isPalindrome(each) == True:
-            return each
+    for a in range(max,min-1, -1):
+        for b in range(max,min-1, -1):
+            if isPalindrome(a*b) == True and a*b>largest:
+                largest = a*b
+            else:
+                pass
+    return largest
 
 
 print (largestPalindrome(3))
