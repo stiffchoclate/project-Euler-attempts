@@ -1,3 +1,6 @@
+#Problem 4: What is the largest possible palindrome that is the product of two 3-digit numbers?
+
+
 #how do i detect whether the number is a palindrome
 #reads the same forward and backwards
 """it's probably a recursive solution.
